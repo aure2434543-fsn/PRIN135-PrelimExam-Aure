@@ -1,126 +1,122 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-  <title>PRIN135-PrelimExam</title>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIN135 - Midterm Exam | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
 
-  <header>
-    <p>
-      <a href="#Profile">Profile</a>
-      |
-      <a href="#Skills">Skills</a>
-      |
-      <a href="#Education">Education</a>
-      |
-      <a href="#Awards">Awards and Achievement</a>
-      |
-      <a href="#Contact">Contact Me</a>
-    </p>
-  </header>
+    <!-- ---------- Navigation ---------- -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <section id="Profile">
+    <!-- ---------- Header ---------- -->
+    <header class="site-header">
+        <div class="header-inner clearfix">
 
-    <img width="200" src="https://scontent.fmnl15-1.fna.fbcdn.net/v/t39.30808-1/782149392_1043141875302488_2233041347517031145_n.jpg?stp=dst-jpg_tt6&cstp=mx700x701&ctp=s100x100&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=fPSaCtouIFoQ7kNvwH5zEtK&_nc_oc=AdrbdpQI4rMZkYkVeJ_wqUw-MT94nEXbPru5ScXUWfMLhVm9gbB-MHcEgWdiwt02E7I&_nc_zt=24&_nc_ht=scontent.fmnl15-1.fna&_nc_gid=eqpkboza224QQi7n9R0sHQ&_nc_ss=78289&oh=00_AQFgnmmAC5lQmgfw7X8_dzHQ2yCjdWQiEs7SfYhVTGW5Sg&oe=6A9564DF">
+            <div class="photo-box">
+                <div class="photo-frame">
+                    <!-- Replace the image with your own profile picture -->
+                    <img class="photo" src="https://media.tenor.com/AtPbKGkYFp8AAAAM/forward-pass-nrl.gif">
+                </div>
+            </div>
 
-    <h2>Juray Lil Black</h2>
-
-    <a href="mailto:aure2434543@mls.ceu.edu.ph">aure2434543@mls.ceu.edu.ph</a>
-    |
-    <a href="tel:+6394348755973">0943 4875 5973</a>
-    |
-    <a href="https://github.com/aure2434543-fsn" target="_blank">Github.com</a>
-
-    <p>
-      A rare specimen with legendary wide eyes. Bro doesn’t need binoculars—the binoculars need him.
+            <div class="header-text">
+                <h1 class="name">Juray Lil Black</h1>
+                <ul class="header-links">
+                    <li><a href="tel:+639123456789">+63 912 345 6789</a></li>
+                    <li><a href="mailto:aure2434543@mls.ceu.edu.ph">aure2434543@mls.ceu.edu.ph</a></li>
+                    <li><a href="https://github.com/aure2434543-fsn" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                </ul>
+                <p class="profile">
+                     A rare specimen with legendary wide eyes. Bro doesn’t need binoculars—the binoculars need him.
       He can see tomorrow, yesterday, and what you’re doing behind his back. His eyes are permanently
       set to ultra-wide 8K mode, and scientists are still trying to figure out how he blinks without
       buffering. If you ever lose something, just ask Juray—he’s already seen it.
-    </p>
+                </p>
+            </div>
 
-  </section>
+        </div>
+    </header>
 
-  <section id="Skills">
+    <main class="wrapper">
 
-    <h2>Skills</h2>
+        <!-- ---------- Skills ---------- -->
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+            <li>Wide Vision</li>
+            <li>Omnipresent Sight</li>
+            <li>High-Range Scanning</li>
+            </ul>
+        </section>
 
-    <ul>
-      <li>Wide Vision</li>
-      <li>Omnipresent Sight</li>
-      <li>High-Range Scanning</li>
-    </ul>
+        <!-- ---------- Education ---------- -->
+        <section id="education" class="card">
+            <h2>Education</h2>
 
-  </section>
+            <ol>
+                 <li>La Consolacion University Philippines</li>
+             </ol>
 
-  <section id="Education">
+        </section>
 
-    <h2>Education</h2>
+        <!-- ---------- Achievements ---------- -->
+        <section id="achievements" class="card">
+            <h2>Achievements</h2>
+            <ul class="achievement-list">
+                <li>King of Banlag</li>
+             <li>Certified Banlag Legend</li>
+            <li>Professional Lookout</li>
+            <li>GitHub Project Collaborator 2026</li>
+            </ul>
+        </section>
 
-    <ol>
-      <li>La Consolacion University Philippines</li>
-    </ol>
+        <!-- ---------- Contact me ---------- -->
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row clearfix">
+                    <div class="field field-left">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
 
-  </section>
+                    <div class="field field-right">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
 
-  <section id="Awards">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
 
-    <h2>Awards and Achievements</h2>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
 
-    <ol>
-      <li>King of Banlag</li>
-      <li>Certified Banlag Legend</li>
-      <li>Professional Lookout</li>
-      <li>GitHub Project Collaborator 2026</li>
-    </ol>
+    </main>
 
-  </section>
-
-  <section id="Contact">
-
-    <h2>Contact Me</h2>
-
-    <form>
-
-      <label for="name">Name:</label>
-      <br>
-      <input type="text" id="name" name="name" placeholder="Enter Name" required maxlength="25">
-      <br>
-
-      <label for="email">Email:</label>
-      <br>
-      <input type="email" id="email" name="email" placeholder="Enter Email" required maxlength="25">
-      <br>
-
-      <label for="message">Message:</label>
-      <br>
-      <textarea id="message" name="message" rows="10" cols="30" placeholder="Enter your Message" required maxlength="255"></textarea>
-
-      <br>
-
-      <button type="submit">Contact Me</button>
-
-    </form>
-
-  </section>
-
-  <p>
-    <a href="#Profile">Profile</a>
-    |
-    <a href="#Skills">Skills</a>
-    |
-    <a href="#Education">Education</a>
-    |
-    <a href="#Awards">Awards and Achievement</a>
-    |
-    <a href="#Contact">Contact Me</a>
-  </p>
+    <!-- ---------- Footer ---------- -->
+    <footer class="site-footer">
+        <p class="footer-name">Juray Lil Black &middot; Portfolio</p>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
 
 </body>
 
 </html>
-
